@@ -1,4 +1,4 @@
-const BASE_URL = '/api/users'
+const BASE_URL = `${import.meta.env.VITE_API_BASE_URL || ''}/api/users`
 
 async function handleResponse(res) {
   const json = await res.json()
